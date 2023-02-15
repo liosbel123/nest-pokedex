@@ -35,3 +35,12 @@ http://localhost:3000/api/v2/seed
 ## Stack usado
 *MongoDB
 *NestJS
+
+# Production Build
+1. Crear archivo ````.env.prod```
+2. Llenar las variables de entorno de producción
+3. Crear la imagen 
+````
+docker-composer -f docker-compose.prod.yml --env-file .env.prod up --build
+```
+
